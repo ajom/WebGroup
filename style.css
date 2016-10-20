@@ -6,36 +6,51 @@
 .logo {
 	background-color: #84e6ff; /* Light Blue */
 	color: black;
-	padding: 15px 64px;
+	right: 40px;
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	text-align: center;
 	text-decoration: none;
 	display: inline;
 	font-size: 25px;
 	float: left;
 	border: 1px solid purple;
+	width: 225px;
+
+
 }
 .button {
 	background-color: #00ccff; /* Light Blue */
 	color: black;
-	padding: 15px 32px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	text-align: center;
 	text-decoration: none;
 	display: inline;
 	font-size: 25px;
 	cursor: pointer;
 	float: left;
-	border: 1px solid purple
+	border: 1px solid purple;
+	border-bottom: 0px;
+	position: relative;
+	left: -40px;
+	width: 20%;
+
 }
 .button:hover {
 	background-color: #9adaea;
 }
 .mainheader {
-	background-color: #4242d6;
-	padding-top: 40px;
+	background-color: #00ccff;
+	border-bottom: 1px solid purple;
+	/*padding-top: 40px;*/
+	height: 61px;
 }
 .mainheader nav ul {
 	list-style: none;
 	margin: 0 auto;
+
 }
 .pageTitle {
 	margin-top: 0;
