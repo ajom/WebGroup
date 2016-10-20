@@ -186,9 +186,7 @@
     background-color: #7698a0;
 }
 .unique-text {
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
+	
 }
 .page3 {
     height: 500px;
