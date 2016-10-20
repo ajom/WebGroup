@@ -2,12 +2,13 @@
 <html lang="en">
 
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script type="text/javascript" src="js/welcome.js"></script>
 
 	<head>
 		<title>Long Scroll</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="style.css" type="text/css" />
-		<meta name="viewport" content="width-device-width, initial-scale=1.0" >	
+		<meta name="viewport" content="width-device-width, initial-scale=1.0" >
 	</head>
 
 	<body class="body">
@@ -23,8 +24,34 @@
 		</header>
 		<div id="page0" class="page0">
 			<a id="welcome"></a>
-			<h1 class="pageTitle">Welcome</h1>
-			Welcome section with image goes here.
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="img/2.JPG" style="width:100%">
+				  <!-- <div class="text">Caption Text</div> -->
+				</div>
+				<div class="mySlides fade", id="notshow1">
+					<img src="img/1.JPG" style="width:100%">
+				  <!-- <div class="text">Caption Two</div> -->
+				</div>
+
+				<div class="mySlides fade", id="notshow2">
+				  <img src="img/3.JPG" style="width:100%">
+				  <!-- <div class="text">Caption Three</div> -->
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div style="text-align:center; position:relative; top: -180px;">
+					<h1 id="welcometag" style:"position: relative;">WELCOME</h1>
+					<div style="background-color:rgba(0,0,0,0.7); width: 10%; text-align:center; margin: auto auto; border-radius: 30px; padding: 5px 0px 5px 0px;">
+			  		<span class="dot active" onclick="currentSlide(1)"></span>
+			  		<span class="dot" onclick="currentSlide(2)"></span>
+			  		<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 		<div id="page1" class="page1">
 			<a id="app" class="smooth"></a>
