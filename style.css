@@ -185,13 +185,34 @@
     height: 500px;
     background-color: #9adaea;
 }
+
+/* ------------------Style Sheet for Page 2------------------------*/
 .page2 {
     height: 500px;
     background-color: #7698a0;
+    overflow: hidden;
 }
 .unique-text {
-	
+	clear: both; 
+	width: 30%;
+	height: 40%; 
+	margin-left: 20%; 
+	word-wrap:break-word; 
+	overflow: auto;
+	float: left;
 }
+.unique-text2 {
+	height: 40%; 
+	margin-left: 60%; 
+	width: 30%;
+	word-wrap:break-word;
+	overflow: auto;
+
+}
+.app-picture {
+
+}
+/* ----------------------------------------------------------------*/
 .page3 {
     height: 500px;
     background-color: #3f6872;
