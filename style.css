@@ -46,6 +46,9 @@
 	border-bottom: 1px solid purple;
 	/*padding-top: 40px;*/
 	height: 61px;
+	position:fixed;
+	width:100%;
+	z-index: 10;
 }
 .mainheader nav ul {
 	list-style: none;
@@ -84,6 +87,7 @@
 	/*max-height: 50%;*/
   position: relative;
   margin: auto;
+  padding-top: 61px;
 }
 
 /* Next & previous buttons */
