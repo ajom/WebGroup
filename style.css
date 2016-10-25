@@ -223,8 +223,17 @@
 	overflow: auto;
 
 }
-.app-picture {
-
+.unique-pic1 {
+	float: left; 
+	width: 25%; 
+	margin-left: 20%;
+	margin-bottom: 1em;
+}
+.unique-pic2 {
+	float: left; 
+	width: 22%; 
+	margin-left: 20%; 
+	margin-bottom: 1em;
 }
 /* ------------------Style Sheet for Page 3------------------------*/
 .page3 {
@@ -236,3 +245,9 @@
   height: 500px;
   background-color: #204751;
 }
+.footer {
+	text-align: center;
+}
+
+/* -------------------- CSS for Contact Form ------------------------*/
+
