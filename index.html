@@ -67,7 +67,6 @@
 
 			</div>
 			<div class="unique-text">
-
 				Doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequatdoming.
 				 
 			</div>
@@ -94,43 +93,33 @@
 
 			<img style="horizontal-align:right";"width:40px;height:40px;" src="http://vignette3.wikia.nocookie.net/harrypotter/images/a/ab/Charms_class2.jpg/revision/latest?cb=20100621142825"> -->
 
-			<p>We are a multidisiplinary class at Wheaton College, MA working to help people who are diagnosed with diabetes. We are led by Mark LeBlanc who is a Professor of Computer Science. By looking at data given to us by people with diabetus, we are working to create more informative displays of their data to aid them in managing their blood glucose levels over time. Additionally, we are working to plot trends in their respective data with the goal that alerts become more than reactionary, they become predictive.</p>
+			<p>
+				We are a multidisiplinary class at Wheaton College, MA working to help people who are diagnosed with diabetes. We are led by Mark LeBlanc who is a Professor of Computer Science. By looking at data given to us by people with diabetus, we are working to create more informative displays of their data to aid them in managing their blood glucose levels over time. Additionally, we are working to plot trends in their respective data with the goal that alerts become more than reactionary, they become predictive.
+			</p>
 		</div>
 		<div id="page4" class="page4">
 			<a id="contact" class="smooth"></a>
 			<h1 class="pageTitle">Contact Info</h1>
 			<footer class="footer">
 
-				26 E Main St, Norton MA 02766 <br>
+				<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<label for="name">Your name:</label><br />
+						<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+						<label for="email">Your email:</label><br />
+						<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+						<label for="message">Your message:</label><br />
+						<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+					</div>
+					<input id="submit_button" type="submit" value="Send email" />
+				</form>						
+					
+				<br>26 E Main St, Norton MA 02766 <br>
 				Copyright © Wheaton College <br>
-
-
-				 <form action="index.html" class="contact">
-				    <fieldset class="contact-inner">
-				      <p class="contact-input">
-				        <input type="text" name="name" placeholder="Your Name…" autofocus>
-				      </p>
-
-				      <p class="contact-input">
-				        <label for="select" class="select">
-				          <select name="subject" id="select">
-				            <option value="" selected>Choose Subject…</option>
-				            <option value="1">I have a suggestion</option>
-				            <option value="1">I found a bug</option>
-				            <option value="1">Other</option>
-				          </select>
-				        </label>
-				      </p>
-
-				      <p class="contact-input">
-				        <textarea name="message" placeholder="Your Message…"></textarea>
-				      </p>
-
-				      <p class="contact-submit">
-				        <input type="submit" value="Send Message">
-				      </p>
-				    </fieldset>
-				  </form>
 			</footer>
 		</div>
 	</body>
