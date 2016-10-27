@@ -97,6 +97,7 @@ var ss = {
   },
 
   scrollWindow: function(scramount,dest,anchor) {
+    dest = dest - 61;
     wascypos = ss.getCurrentYPos();
     isAbove = (wascypos < dest);
     window.scrollTo(0,wascypos + scramount);
@@ -110,7 +111,7 @@ var ss = {
       // cancel the repeating timer
       clearInterval(ss.INTERVAL);
       // and jump to the link directly so the URL's right
-      location.hash = anchor;
+      location.hash = anchor - 61;
     }
   },
 
