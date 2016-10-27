@@ -232,13 +232,24 @@
 .unique-pic2 {
 	float: left; 
 	width: 22%; 
-	margin-left: 20%; 
+	margin-left: 10%; 
 	margin-bottom: 1em;
 }
 /* ------------------Style Sheet for Page 3------------------------*/
 .page3 {
   height: 500px;
   background-color: #3f6872;
+}
+.leblanc {
+  margin-left: 20%;
+  float: left; 
+  width: 15%; 
+  margin-right: 1%; 
+}
+.page3-text {
+  margin-right: 20%;
+  margin-left: 40%;
+
 }
 /* ------------------Style Sheet for Page 4------------------------*/
 .page4 {
