@@ -17,8 +17,6 @@
 	float: left;
 	border: 1px solid purple;
 	width: 19%;
-
-
 }
 .button {
 	background-color: #00ccff; /* Light Blue */
@@ -311,12 +309,13 @@
 }
 .pie-img {
   float: left;
-  margin-left: 17%;
+  margin-left: 25%;
 }
 .seperator {
   margin-top: 40%;
 }
 .graph-img {
-  margin-right: 20%;
-  margin-left: 2%;
+  margin-right: 24%;
+  margin-left: 15%;
+  width: 70%;
 }
