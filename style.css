@@ -2,6 +2,7 @@
 	width: 100%;
 	margin: 0 auto;
 	clear: both;
+  overflow-x: hidden;
 }
 .logo {
 	background-color: #84e6ff; /* Light Blue */
