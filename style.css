@@ -12,7 +12,7 @@
 	text-align: center;
 	text-decoration: none;
 	display: inline;
-	font-size: 25px;
+	font-size: 20px;
 	float: left;
 	border: 1px solid purple;
 	width: 19%;
@@ -27,13 +27,13 @@
 	text-align: center;
 	text-decoration: none;
 	display: inline;
-	font-size: 25px;
+	font-size: 20px;
 	cursor: pointer;
 	float: left;
 	border: 1px solid purple;
 	position: relative;
-	left: -40px;
-	width: 20%;
+	left: -2px;
+	width: 15%;
 }
 .button:hover {
 	background-color: #9adaea;
@@ -272,3 +272,50 @@
 
 /* -------------------- CSS for Contact Form ------------------------*/
 
+
+
+/* -------------------- Style Sheet for Reports Page ------------------------*/
+.reports-body {
+  overflow-x: hidden;
+}
+.reportsheader {
+  height: 61px;
+  position: fixed;
+  width:100%;
+  z-index: 10;
+  margin-left: 16%;
+  margin-top: -8px;
+}
+.reportsheader nav ul {
+  list-style: none;
+  margin: 0 auto;
+}
+.profile {
+  height: 500px;
+  overflow: hidden;
+}
+.profile-img {
+  float: left;
+  width: 15%;
+  margin-top: 8%;
+  margin-left: 20%;
+}
+.profile-title {
+  margin-top: 8%;
+  margin-left: 50%;
+}
+.patient-desc {
+  margin-left: 45%;
+  margin-right: 20%;
+}
+.pie-img {
+  float: left;
+  margin-left: 17%;
+}
+.seperator {
+  margin-top: 40%;
+}
+.graph-img {
+  margin-right: 20%;
+  margin-left: 2%;
+}
