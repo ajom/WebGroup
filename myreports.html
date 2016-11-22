@@ -6,8 +6,7 @@
 	<head>
 	  <meta charset="utf-8">
 	  <title>GluGo/myReports</title>
-	  <link rel="stylesheet" href="style.css" type="text/css" />
-
+	  <link rel="stylesheet" href="style.css" type="text/css"/>
 	</head>
 
 	<body class="reports-body">
@@ -22,6 +21,12 @@
 			<p style="clear:both">
 		</header>
 		<div class="header-background"></div>
+		<video poster="img/tutorial.jpg" class="reports-video" onclick="this.paused?this.play():this.pause();" controls>
+			<source src="report_demo.mp4" type="video/mp4">
+			<source src="report_demo.ogg" type="video/ogg">
+			Your browser does not support HTML5 video.
+		</video>
+		<hr>
 		<div id="profile" class="profile">
 			<img class="profile-img" src="img/profilepic.svg">
 			<h2 class="profile-title">Patient Info</h2>
@@ -30,15 +35,16 @@
 				</p>
 		</div>
 		<hr>
-		<div id="piecharts">
-			<img class="pie-img" src="img/static-piecharts.jpg">
+
+		<div id="linegraphs"> 
+			<a href="reports/report.html" target="_blank">
+	    		<img class="graph-img" src="img/graph-static.png" >
+	    	</a>
 		</div>
 
-		<hr class="seperator">
-
-
-		<div id="linegraphs">
-			<img class="graph-img" src="img/graph-static.png">
-		</div>
+		<footer class="footer">
+			<br>26 E Main St, Norton MA 02766 <br>
+			Copyright © Wheaton College <br>
+		</footer>
 	</body>
 </html>
