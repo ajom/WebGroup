@@ -284,7 +284,7 @@
   position: fixed;
   width:100%;
   z-index: 10;
-  margin-left: 16%;
+  margin-left: 23.4%;
   margin-top: -8px;
 }
 .reportsheader nav ul {
@@ -297,8 +297,8 @@
   margin-top: 7%;
 }
 .profile {
-  height: 500px;
   overflow: hidden;
+  padding-bottom: 5%;
 }
 .profile-img {
   float: left;
@@ -326,4 +326,5 @@
   margin-right: 24%;
   margin-left: 18%;
   width: 65%;
+  margin-bottom: 5%;
 }

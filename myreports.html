@@ -7,6 +7,13 @@
   <title>Reports</title>
 
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script> 
+	window.onload = function(){
+	$("#includedContent").load("reports/report.html"); 
+	});
+  </script> 
+  !-->
 
 </head>
 
@@ -15,8 +22,7 @@
 		<nav><ul>
 			<li><a href="index.html" class="button">Home</a></li>
 			<li><a href="#profile" class="button">Profile</a></li>
-			<li><a href="#piecharts" class="button">Pie Charts</a></li>
-			<li><a href="#linegraphs" class="button">Graphs</a></li>
+			<li><a href="#linegraphs" class="button">Graph</a></li>
 		</ul></nav>
 		<p style="clear:both">
 	</header>
@@ -26,6 +32,7 @@
 	  <source src="report_demo.ogg" type="video/ogg">
 	  Your browser does not support HTML5 video.
 	</video>
+	<hr>
 	<div id="profile" class="profile">
 		<img class="profile-img" src="img/profilepic.svg">
 		<h2 class="profile-title">Patient Info</h2>
@@ -34,15 +41,17 @@
 			</p>
 	</div>
 	<hr>
-	<div id="piecharts">
-		<img class="pie-img" src="img/static-piecharts.jpg">
+
+	<div id="linegraphs"> 
+		<a href="reports/report.html" target="_blank">
+    		<img class="graph-img" src="img/graph-static.png" >
+    	</a>
 	</div>
 
-	<hr class="seperator">
 
-
-	<div id="linegraphs">
-		<img class="graph-img" src="img/graph-static.png">
-	</div>
+	<footer class="footer">
+		<br>26 E Main St, Norton MA 02766 <br>
+		Copyright © Wheaton College <br>
+	</footer>
 </body>
 </html>
