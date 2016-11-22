@@ -1,54 +1,70 @@
 .body {
-	width: 100%;
-	margin: 0 auto;
-	clear: both;
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
   overflow-x: hidden;
 }
 .logo {
-	background-color: #84e6ff; /* Light Blue */
-	color: black;
-	position: relative;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	text-align: center;
-	text-decoration: none;
-	display: inline;
-	font-size: 20px;
-	float: left;
-	border: 1px solid purple;
-	width: 19%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 20px;
+  float: left;
+}
+.logo-img {
+  height: 61px;
 }
 .button {
-	background-color: #00ccff; /* Light Blue */
-	color: black;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	text-align: center;
-	text-decoration: none;
-	display: inline;
-	font-size: 20px;
-	cursor: pointer;
-	float: left;
-	border: 1px solid purple;
-	position: relative;
-	left: -2px;
-	width: 15%;
+  background-color: #00ccff; /* Light Blue */
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 20px;
+  cursor: pointer;
+  float: left;
+  border: 1px solid purple;
+  position: relative;
+  left: -2px;
+  width: 15%;
   border-radius: 20px 10px 0px 0px;
-
 }
 .button:hover {
-	background-color: #9adaea;
+  background-color: #9adaea;
+}
+.header-list {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  float: left;
+  display: inline-block;
+}
+.header-background {
+  background-color: #008fb3;
+  width: 100%;
+  height: 61px;
+  position: fixed;
+  z-index: 5;
 }
 .mainheader {
-	/*padding-top: 40px;*/
+  margin-left: 9%;
 	height: 61px;
 	position: fixed;
+  text-align: center;
 	width:100%;
 	z-index: 10;
 }
 .mainheader nav ul {
 	list-style: none;
-	margin: 0 auto;
+  margin-top: 0px;
+	margin-left: 0px;
+  padding-left: 0px;
+  height: 100%;
+  display: block;
+  text-align:center;
 }
 .pageTitle {
 	margin-top: 0;
@@ -72,7 +88,9 @@
 }
 /** {box-sizing:border-box}*/
 /*.mySlides {display:none}*/
-#notshow1, #notshow2 {display:none}
+#notshow1, #notshow2 {
+  display: none;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -278,14 +296,14 @@
 /* -------------------- Style Sheet for Reports Page ------------------------*/
 .reports-body {
   overflow-x: hidden;
+  margin: 0px;
 }
 .reportsheader {
   height: 61px;
   position: fixed;
   width:100%;
   z-index: 10;
-  margin-left: 16%;
-  margin-top: -8px;
+  margin-left: 15%;
 }
 .reportsheader nav ul {
   list-style: none;
