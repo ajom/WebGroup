@@ -198,6 +198,10 @@
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.welcome-video {
+  margin-top: 61px;
+}
 /* --------------------Welcome Section Ends------------------------- */
 
 /* ------------------Style Sheet for Page 1------------------------*/
