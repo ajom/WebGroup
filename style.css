@@ -26,7 +26,7 @@
   font-size: 20px;
   cursor: pointer;
   float: left;
-  border: 1px solid purple;
+  border: 1px solid grey;
   position: relative;
   left: -2px;
   width: 15%;
@@ -81,10 +81,11 @@
 	/*background-color: #c6efea;*/
 	background-color: #FFFFFF
 }
-#welcometag{
+#welcometag {
 	font-size: 50px;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(101, 101, 101, 1);
 	font-style: bold;
+  text-align: center;
 }
 /** {box-sizing:border-box}*/
 /*.mySlides {display:none}*/
@@ -200,7 +201,7 @@
 }
 
 .welcome-video {
-  margin-top: 61px;
+  height: 100%;
 }
 /* --------------------Welcome Section Ends------------------------- */
 
@@ -289,7 +290,7 @@
   float: right;
   width: 60px;
 }
-.photo-grid img {
+.photo-grid a img {
   float: left;
   width: 50px;
   padding-top: 5px;
