@@ -27,8 +27,6 @@
   cursor: pointer;
   float: left;
   border: 1px solid grey;
-  position: relative;
-  left: -2px;
   width: 15%;
   border-radius: 20px 10px 0px 0px;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -259,6 +257,13 @@
   margin-right: auto;
   height: 450px;
 }
+.page1-text-center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  overflow: scroll;
+  height: 300px;
+}
 .page1-text-left {
   padding-left: 2%;
   margin-left: auto;
@@ -279,36 +284,36 @@
 }
 /* ------------------Style Sheet for Page 2------------------------*/
 .page2 {
-    height: 500px;
+    height: 550px;
     background-color: rgba(87, 149, 209, 0.58);
     overflow: hidden;
 }
 .unique-text {
 	clear: both; 
-	width: 30%;
-	height: 40%; 
-	margin-left: 20%; 
-	word-wrap:break-word; 
+	width: 40%;
+	height: 275px;
+	margin-left: 10%;
+	word-wrap:break-word;
 	overflow: auto;
 	float: left;
 }
 .unique-text2 {
-	height: 40%; 
-	margin-left: 60%; 
+	height: 40%;
+	margin-left: 60%;
 	width: 30%;
 	word-wrap:break-word;
 	overflow: auto;
-
+  font-size: 20px;
 }
 .unique-pic1 {
 	float: left; 
-	width: 25%; 
-	margin-left: 20%;
+	height: 175px;
+	margin-left: 15%;
 	margin-bottom: 1em;
 }
 .unique-pic2 {
 	float: left; 
-	width: 22%; 
+	height: 200px; 
 	margin-left: 10%; 
 	margin-bottom: 1em;
 }
@@ -339,6 +344,12 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.blank-grid {
+  float: left;
+  width: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 /* 2D TRANSITIONS */
 /* Grow */
 .hvr-grow {
@@ -353,8 +364,8 @@
   transition-property: transform;
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 /* ------------------Style Sheet for Page 4------------------------*/
 .page4 {
