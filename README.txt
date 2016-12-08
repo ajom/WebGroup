@@ -1,6 +1,6 @@
 INTRODUCTION
 ------------------------------------
-This directory contains the HTML/CSS/Javascript and images/movies used to create the Glugo website.
+This directory contains the HTML/CSS/Javascript and images/movies used to create the GluGo website.
 The website also accesses the REPORTS project, which givesthe user a timeline and pie chart view of their glucose levels. The function of the website is to give the user an overview of our mobile app and web app (reports) and showcase their features. 
 
 
