@@ -1,8 +1,27 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "omalley_austin@wheatoncollege.edu"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
-	<script type="text/javascript" src="js/welcome.js"></script>
 
 	<head>
 		<title>GluGo</title>
@@ -101,13 +120,13 @@
 			1.  This bar selects the time span shown on the graph, and displays the glucose values that fall in the selected period.
 			</p>
 			<p class="page1-text-left" style="top: 65%;">
-			2.  Each point on the graph represents a unique glucose value from the user's dataset. Points are color-coded to signify what type of event occurred near the time of the reading. A legend containg the available event types is in the upper-right hand side of the graph.
+			2.  Each point on the graph represents a unique glucose value from the user's dataset. Points are color-coded to signify what type of event occurred near the time of the reading. A legend containing the available event types is in the upper-right hand side of the graph.
 			</p>
 			<p class="page1-text-right">
 			3.  The 'prev' and 'next' buttons change the displayed time span, according to the selection in the bar above the graph. For example, if 'day' is selected and the user presses the 'next' button, the next day will be displayed on the graph.
 			</p>
 			<p class="page1-text-right" style="top: 65%;">
-			4.  The 'Add Activity' field allows the user to edit event types and add comments to further personalize their data. This selction transitions to the next screen.
+			4.  The 'Add Activity' field allows the user to edit event types and add comments to further personalize their data. This selection transitions to the next screen.
 			</p>
 		</div>
 		<div id="page1.3" class="page1">
@@ -117,10 +136,10 @@
 			1.  The 'Back' button redirects to the previous page containing the graph with, a smooth transitioning animation.
 			</p>
 			<p class="page1-text-left" style="top: 65%;">
-			2.  Each glucose value from the user's dataset is given a unique selection that displays the glucose reading, in mg/dL, and the date followed by the time the reading took place on. Entries are color-coded in the same fasion as the points on the graph to signify even type.
+			2.  Each glucose value from the user's dataset is given a unique selection that displays the glucose reading, in mg/dL, and the date followed by the time the reading took place on. Entries are color-coded in the same fashion as the points on the graph to signify even type.
 			</p>
 			<p class="page1-text-right">
-			3.  The plus icon allows for custom input of a new glucose value, which will be added to the list.
+			3.  The plus icon allows for an event type to be applied to all glucose values within a custom time span, which is easily input by the user on another specialized page.
 			</p>
 			<p class="page1-text-right" style="top: 65%;">
 			4.  Selecting a field will bring the user to our final page, 'Activity Management', described in the following section.
@@ -139,7 +158,7 @@
 			3.  The 'Save' button saves any changes made to this form to the user's dataset, contained in the GluGo database.
 			</p>
 			<p class="page1-text-right" style="top: 65%;">
-			4.  The above field cycles through available event types with the swipe of a finger. Upon resting on an event type, the field above will be updated. The text box labeled 'Notes' below that allows for custom descriptions of the event that can be further analyzed by GluGo's machine learning algorithms.
+			4.  The above field cycles through available event types with the swipe of a finger. Upon resting on an event type, the field above will be updated. The text box labeled 'Notes' below allows for custom descriptions of the event that can be further analyzed by GluGo's machine learning algorithms.
 			</p>
 		</div>
 		<div id="page2" class="page2">
@@ -209,7 +228,7 @@
 					<img class="hvr-grow" src="img/hshots/IMG_6208.jpg" alt="" />
 				</a>
 
-				<a target="_blank">
+				<a href="https://www.linkedin.com/in/ethan-powell-77419b128" target="_blank">
 					<img class="hvr-grow" src="img/hshots/IMG_6180.jpg" alt="" />
 				</a>
 
@@ -217,11 +236,11 @@
 					<img class="hvr-grow" src="img/hshots/IMG_6189.jpg" alt="" />
 				</a>
 
-				<a target="_blank">
+				<a href="https://www.linkedin.com/in/sam-steinfeld-0034b0115" target="_blank">
 					<img class="hvr-grow" src="img/hshots/samS.jpg" alt="" style="height: 50px; width: 50px;" />
 				</a>
 
-				<a target="_blank">
+				<a href="https://www.linkedin.com/in/elspeth-stewart-a11772123" target="_blank">
 					<img class="hvr-grow" src="img/hshots/IMG_6265.jpg" alt="" />
 				</a>
 				
@@ -285,22 +304,26 @@
 			<h1 class="pageTitle">Join Us</h1>
 			<footer class="footer">
 
-				<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-					<div class="row">
-						<label for="name">Your name:</label><br />
-						<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+				<form action="" method="post">
+					<div>
+						<label>Your first name:</label><br />
+						<input type="text" name="first_name" size="30" /><br />
 					</div>
-					<div class="row">
-						<label for="email">Your email:</label><br />
-						<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+					<div>
+						<label>Your last name:</label><br />
+						<input type="text" name="last_name" size="30" /><br />
 					</div>
-					<div class="row">
-						<label for="message">Your message:</label><br />
-						<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+					<div>
+						<label>Your email:</label><br />
+						<input type="text" name="email" size="30" /><br />
 					</div>
-					<input id="submit_button" type="submit" value="Send email" />
-				</form>						
-					
+					<div>
+						<label>Your message:</label><br />
+						<textarea name="message" rows="7" cols="30"></textarea><br />
+					</div>
+					<input id="submit_button" type="submit" name="submit" value="Submit" />
+				</form>
+
 				<br>26 E Main St, Norton MA 02766 <br>
 				Copyright © Wheaton College <br>
 			</footer>
