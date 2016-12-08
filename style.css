@@ -271,7 +271,8 @@
   width: 25%;
   position: absolute;
   top: 30%;
-  transform: translate(0, -50%)
+  transform: translate(0, -50%);
+  font-size: 20px;
 }
 .page1-text-right {
   padding-right: 2%;
@@ -280,7 +281,8 @@
   width: 25%;
   position: absolute;
   top: 30%;
-  transform: translate(0, -50%)
+  transform: translate(0, -50%);
+  font-size: 20px;
 }
 /* ------------------Style Sheet for Page 2------------------------*/
 .page2 {
