@@ -1,10 +1,10 @@
-##INTRODUCTION
+##Introduction
 ------------------------------------
 This directory contains the HTML/CSS/Javascript and images/movies used to create the Glugo website.
 The website also accesses the REPORTS project, which givesthe user a timeline and pie chart view of their glucose levels. The function of the website is to give the user an overview of our mobile app and web app (reports) and showcase their features. 
 
 
-##MAIN FOLDER
+##Main Folder
 ------------------------------------
 favicon.ico - .ico image used in header to display company logo
 
@@ -19,7 +19,7 @@ report_demo.mp4 - .mp4 video that demonstrates how to use the timeline and pie c
 style.css - CSS formatting
 
 
-##SUBDIRECTORIES
+##Subdirectories
 ------------------------------------
 reports - contains the code used to generate user reports based on their glucose data and display the user interface
 
@@ -28,10 +28,10 @@ js - contains the Javascript for enabling smooth scrolling
 img - contains all the images used on the website. Inside img is a subdirectory called hshots which contains all the Glugo team's headshot photos.
 
 
-##AUTHORS
+##Authors
 ------------------------------------
-Jesse Aronson
-Yihong Jin
-Kamran Noorian
-Austin O'Malley
-Steven Waterhouse
+*Jesse Aronson
+*Yihong Jin
+*Kamran Noorian
+*Austin O'Malley
+*Steven Waterhouse
