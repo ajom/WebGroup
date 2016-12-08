@@ -34,4 +34,4 @@ Jesse Aronson,
 Yihong Jin, 
 Kamran Noorian, 
 Austin O'Malley, 
-Steven Waterhouse, 
+Steven Waterhouse 
