@@ -28,10 +28,10 @@ js - contains the Javascript for enabling smooth scrolling
 img - contains all the images used on the website. Inside img is a subdirectory called hshots which contains all the Glugo team's headshot photos.
 
 
-##Authors
+##Contributors
 ------------------------------------
-*Jesse Aronson
-*Yihong Jin
-*Kamran Noorian
-*Austin O'Malley
-*Steven Waterhouse
+Jesse Aronson, 
+Yihong Jin, 
+Kamran Noorian, 
+Austin O'Malley, 
+Steven Waterhouse, 
